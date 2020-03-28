@@ -33,11 +33,11 @@
     "require": {
         "php": "~7.2",
 
-        "symfony/framework-bundle": "~3.4|~4.0",
-        "symfony/config": "~3.4|~4.0",
-        "symfony/http-kernel": "~3.4|~4.0",
-        "symfony/dependency-injection": "~3.4|~4.0",
-        "symfony/twig-bundle": "~3.4|~4.0",
+        "symfony/framework-bundle": "~3.4|~4.0|~5.0",
+        "symfony/config": "~3.4|~4.0|~5.0",
+        "symfony/http-kernel": "~3.4|~4.0|~5.0",
+        "symfony/dependency-injection": "~3.4|~4.0|~5.0",
+        "symfony/twig-bundle": "~3.4|~4.0|~5.0",
 
         "twig/twig": "~1.42|~2.11|~3.0",
         "euskadi31/opengraph": "~1.0"
