@@ -1,9 +1,0 @@
-services:
-    Tenolo\Bundle\OpenGraphBundle\Manager\:
-        resource: '../../Manager/*'
-
-    Tenolo\Bundle\OpenGraphBundle\Renderer\:
-        resource: '../../Renderer/*'
-
-    Tenolo\Bundle\OpenGraphBundle\Twig\Extension\:
-        resource: '../../Twig/Extension/*'
