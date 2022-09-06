@@ -16,7 +16,6 @@ use Tenolo\Bundle\OpenGraphBundle\Map\OpenGraphMapInterface;
  */
 class TenoloOpenGraphBundle extends Bundle
 {
-
     /**
      * @inheritdoc
      */

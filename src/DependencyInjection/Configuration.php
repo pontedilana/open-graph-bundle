@@ -21,18 +21,8 @@ class Configuration implements ConfigurationInterface
     /**
      * @inheritDoc
      */
-    public function getConfigTreeBuilder()
+    public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder(static::ROOT_NODE);
-
-        if (method_exists($treeBuilder, 'getRootNode')) {
-            // Symfony 4.2 +
-            $rootNode = $treeBuilder->getRootNode();
-        } else {
-            // Symfony 4.1 and below
-            $rootNode = $treeBuilder->root(static::ROOT_NODE);
-        }
-
-        return $treeBuilder;
+        return new TreeBuilder(static::ROOT_NODE);
     }
 }

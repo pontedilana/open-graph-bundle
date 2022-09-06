@@ -14,13 +14,8 @@ use Tenolo\Bundle\OpenGraphBundle\OpenGraph\DocumentWriter;
  */
 class OpenGraphRenderer implements OpenGraphRendererInterface
 {
+    protected MapManagerInterface $mapManager;
 
-    /** @var MapManagerInterface */
-    protected $mapManager;
-
-    /**
-     * @param MapManagerInterface $registry
-     */
     public function __construct(MapManagerInterface $registry)
     {
         $this->mapManager = $registry;
@@ -50,17 +45,11 @@ class OpenGraphRenderer implements OpenGraphRendererInterface
         return '';
     }
 
-    /**
-     * @return MapManagerInterface
-     */
     protected function getMapManager(): MapManagerInterface
     {
         return $this->mapManager;
     }
 
-    /**
-     * @return DocumentWriter
-     */
     protected function createDocument(): DocumentWriter
     {
         return new DocumentWriter();

@@ -15,7 +15,6 @@ use Symfony\Component\DependencyInjection\Reference;
  */
 class OpenGraphMapCompilerPass implements CompilerPassInterface
 {
-
     /**
      * @inheritdoc
      */

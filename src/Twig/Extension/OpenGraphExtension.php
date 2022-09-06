@@ -16,9 +16,7 @@ use Twig\TwigFunction;
  */
 class OpenGraphExtension extends AbstractExtension
 {
-
-    /** @var OpenGraphRendererInterface */
-    protected $renderer;
+    protected OpenGraphRendererInterface $renderer;
 
     /**
      * @param OpenGraphRendererInterface $renderer
@@ -28,10 +26,7 @@ class OpenGraphExtension extends AbstractExtension
         $this->renderer = $renderer;
     }
 
-    /**
-     * @return array
-     */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
             new TwigFunction('opengraph_render', [$this->renderer, 'render'], ['is_safe' => ['html']]),
@@ -39,11 +34,6 @@ class OpenGraphExtension extends AbstractExtension
         ];
     }
 
-    /**
-     * @param Writer $opengraph
-     *
-     * @return string
-     */
     public function renderDocument(Writer $opengraph): string
     {
         return $opengraph->render();

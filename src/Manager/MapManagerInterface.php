@@ -13,10 +13,6 @@ use Tenolo\Bundle\OpenGraphBundle\Map\OpenGraphMapInterface;
  */
 interface MapManagerInterface
 {
-
-    /**
-     * @param OpenGraphMapInterface $map
-     */
     public function register(OpenGraphMapInterface $map): void;
 
     /**

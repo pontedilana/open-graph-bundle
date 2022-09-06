@@ -13,13 +13,9 @@ use Tenolo\Bundle\OpenGraphBundle\Map\OpenGraphMapInterface;
  */
 class MapManager implements MapManagerInterface
 {
-
     /** @var OpenGraphMapInterface[] */
-    protected $maps = [];
+    protected array $maps = [];
 
-    /**
-     * @param OpenGraphMapInterface $map
-     */
     public function register(OpenGraphMapInterface $map): void
     {
         $this->maps[] = $map;

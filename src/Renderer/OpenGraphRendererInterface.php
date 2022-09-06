@@ -11,11 +11,8 @@ namespace Tenolo\Bundle\OpenGraphBundle\Renderer;
  */
 interface OpenGraphRendererInterface
 {
-
     /**
      * @param mixed $data
-     *
-     * @return string
      */
     public function render($data): string;
 }
