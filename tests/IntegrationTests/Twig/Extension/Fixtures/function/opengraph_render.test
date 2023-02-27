@@ -1,0 +1,10 @@
+--TEST--
+"opengraph_render" function test
+--TEMPLATE--
+{{ opengraph_render(entity) }}
+--DATA--
+$entity = new \stdClass();
+$entity->name = 'TestName';
+return ['entity' => $entity]
+--EXPECT--
+	<meta property="og:title" content="TestName" />

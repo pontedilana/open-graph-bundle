@@ -1,6 +1,8 @@
 {
     "name": "tenolo/open-graph-bundle",
     "description": "A Symfony OpenGraph bundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
     "keywords": [
         "opengraph",
         "open",
@@ -10,15 +12,6 @@
         "bundle",
         "tenolo"
     ],
-    "type": "symfony-bundle",
-    "license": "MIT",
-    "homepage": "https://github.com/tenolo/open-graph-bundle",
-    "support": {
-        "email": "info@tenolo.de",
-        "issues": "https://github.com/tenolo/open-graph-bundle/issues",
-        "source": "https://github.com/tenolo/open-graph-bundle/releases",
-        "wiki": "https://github.com/tenolo/open-graph-bundle/wiki"
-    },
     "authors": [
         {
             "name": "tenolo GmbH & Co. KG",
@@ -28,30 +21,50 @@
         {
             "name": "Nikita Loges",
             "email": "n.loges@tenolo.de"
+        },
+        {
+            "name": "Manuel Dalla Lana",
+            "email": "manuel@pontedilana.it",
+            "homepage": "https://www.pontedilana.it"
         }
     ],
-    "require": {
-        "php": "7.4.*|8.0.*|8.1.*",
-
-        "symfony/framework-bundle": "^5.4",
-        "symfony/config": "^5.4",
-        "symfony/http-kernel": "^5.4",
-        "symfony/dependency-injection": "^5.4",
-        "symfony/twig-bundle": "^5.4",
-
-        "twig/twig": "^3.4",
-        "euskadi31/opengraph": "~1.0"
+    "homepage": "https://github.com/tenolo/open-graph-bundle",
+    "support": {
+        "email": "info@tenolo.de",
+        "issues": "https://github.com/tenolo/open-graph-bundle/issues",
+        "wiki": "https://github.com/tenolo/open-graph-bundle/wiki",
+        "source": "https://github.com/tenolo/open-graph-bundle/releases"
     },
+    "require": {
+        "php": "7.4.* || 8.1.* || 8.2.*",
+        "euskadi31/opengraph": "~1.0",
+        "symfony/config": "^5.4 || ^6.2",
+        "symfony/dependency-injection": "^5.4 || ^6.2",
+        "symfony/framework-bundle": "^5.4 || ^6.2",
+        "symfony/http-kernel": "^5.4 || ^6.2",
+        "symfony/twig-bundle": "^5.4 || ^6.2",
+        "twig/twig": "^3.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "symfony/phpunit-bridge": "^5.4 || ^6.2",
+        "matthiasnoback/symfony-config-test": "^4.3"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Tenolo\\Bundle\\OpenGraphBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tenolo\\Bundle\\OpenGraphBundle\\Tests\\": "tests/"
         }
     },
     "extra": {
         "branch-alias": {
             "dev-master": "2.0.x-dev"
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }

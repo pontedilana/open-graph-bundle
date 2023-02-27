@@ -1,0 +1,10 @@
+--TEST--
+"opengraph" function test
+--TEMPLATE--
+{{ opengraph(writer) }}
+--DATA--
+$writer = new \Tenolo\Bundle\OpenGraphBundle\OpenGraph\DocumentWriter();
+$writer->append(Opengraph\Writer::OG_TITLE, 'test');
+return ['writer' => $writer]
+--EXPECT--
+	<meta property="og:title" content="test" />

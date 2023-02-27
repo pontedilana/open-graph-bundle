@@ -45,7 +45,7 @@ class OpenGraphRenderer implements OpenGraphRendererInterface
         return '';
     }
 
-    protected function getMapManager(): MapManagerInterface
+    public function getMapManager(): MapManagerInterface
     {
         return $this->mapManager;
     }
