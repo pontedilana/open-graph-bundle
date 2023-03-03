@@ -1,16 +1,16 @@
 <?php
 
-namespace Tenolo\Bundle\OpenGraphBundle\Renderer;
+namespace Pontedilana\OpenGraphBundle\Renderer;
 
-use Tenolo\Bundle\OpenGraphBundle\Manager\MapManagerInterface;
-use Tenolo\Bundle\OpenGraphBundle\OpenGraph\DocumentWriter;
+use Pontedilana\OpenGraphBundle\Manager\MapManagerInterface;
+use Pontedilana\OpenGraphBundle\OpenGraph\DocumentWriter;
 
 /**
  * Class OpenGraphRenderer
  *
- * @package Tenolo\Bundle\OpenGraphBundle\Renderer
+ * @package Pontedilana\OpenGraphBundle\Renderer
  * @author  Nikita Loges
- * @company tenolo GmbH & Co. KG
+ * 
  */
 class OpenGraphRenderer implements OpenGraphRendererInterface
 {

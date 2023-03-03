@@ -1,13 +1,13 @@
 <?php
 
-namespace Tenolo\Bundle\OpenGraphBundle\Renderer;
+namespace Pontedilana\OpenGraphBundle\Renderer;
 
 /**
  * Interface OpenGraphRendererInterface
  *
- * @package Tenolo\Bundle\OpenGraphBundle\Renderer
+ * @package Pontedilana\OpenGraphBundle\Renderer
  * @author  Nikita Loges
- * @company tenolo GmbH & Co. KG
+ * 
  */
 interface OpenGraphRendererInterface
 {

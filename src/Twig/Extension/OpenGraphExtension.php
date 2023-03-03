@@ -1,18 +1,18 @@
 <?php
 
-namespace Tenolo\Bundle\OpenGraphBundle\Twig\Extension;
+namespace Pontedilana\OpenGraphBundle\Twig\Extension;
 
 use Opengraph\Writer;
-use Tenolo\Bundle\OpenGraphBundle\Renderer\OpenGraphRendererInterface;
+use Pontedilana\OpenGraphBundle\Renderer\OpenGraphRendererInterface;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
 /**
  * Class OpenGraphExtension
  *
- * @package Tenolo\Bundle\OpenGraphBundle\Twig\Extension
+ * @package Pontedilana\OpenGraphBundle\Twig\Extension
  * @author  Nikita Loges
- * @company tenolo GmbH & Co. KG
+ * 
  */
 class OpenGraphExtension extends AbstractExtension
 {

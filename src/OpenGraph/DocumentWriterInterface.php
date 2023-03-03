@@ -1,13 +1,13 @@
 <?php
 
-namespace Tenolo\Bundle\OpenGraphBundle\OpenGraph;
+namespace Pontedilana\OpenGraphBundle\OpenGraph;
 
 /**
  * Interface DocumentWriterInterface
  *
- * @package Tenolo\Bundle\OpenGraphBundle\OpenGraph
+ * @package Pontedilana\OpenGraphBundle\OpenGraph
  * @author  Nikita Loges
- * @company tenolo GmbH & Co. KG
+ * 
  */
 interface DocumentWriterInterface
 {

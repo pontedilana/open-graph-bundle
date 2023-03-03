@@ -1,11 +1,11 @@
 <?php
 
-namespace Tenolo\Bundle\OpenGraphBundle\Tests\IntegrationTests\Twig\Extension;
+namespace Pontedilana\OpenGraphBundle\Tests\IntegrationTests\Twig\Extension;
 
-use Tenolo\Bundle\OpenGraphBundle\Manager\MapManager;
-use Tenolo\Bundle\OpenGraphBundle\Renderer\OpenGraphRenderer;
-use Tenolo\Bundle\OpenGraphBundle\Tests\Mock\Map;
-use Tenolo\Bundle\OpenGraphBundle\Twig\Extension\OpenGraphExtension;
+use Pontedilana\OpenGraphBundle\Manager\MapManager;
+use Pontedilana\OpenGraphBundle\Renderer\OpenGraphRenderer;
+use Pontedilana\OpenGraphBundle\Tests\Mock\Map;
+use Pontedilana\OpenGraphBundle\Twig\Extension\OpenGraphExtension;
 use Twig\Test\IntegrationTestCase;
 
 class OpenGraphExtensionTest extends IntegrationTestCase

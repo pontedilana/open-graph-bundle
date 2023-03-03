@@ -5,15 +5,15 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="tenolo_open_graph.manager" class="Tenolo\Bundle\OpenGraphBundle\Manager\MapManager" />
+        <service id="pontedilana_open_graph.manager" class="Pontedilana\OpenGraphBundle\Manager\MapManager" />
 
-        <service id="tenolo_open_graph.renderer" class="Tenolo\Bundle\OpenGraphBundle\Renderer\OpenGraphRenderer">
-            <argument type="service" id="tenolo_open_graph.manager" />
+        <service id="pontedilana_open_graph.renderer" class="Pontedilana\OpenGraphBundle\Renderer\OpenGraphRenderer">
+            <argument type="service" id="pontedilana_open_graph.manager" />
         </service>
 
-        <service id="Tenolo\Bundle\OpenGraphBundle\Twig\Extension\OpenGraphExtension" public="false">
+        <service id="Pontedilana\OpenGraphBundle\Twig\Extension\OpenGraphExtension" public="false">
             <tag name="twig.extension" />
-            <argument type="service" id="tenolo_open_graph.renderer" />
+            <argument type="service" id="pontedilana_open_graph.renderer" />
         </service>
 
     </services>
