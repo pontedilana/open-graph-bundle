@@ -6,20 +6,17 @@ use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 /**
- * Class Configuration
+ * Class Configuration.
  *
- * @package Pontedilana\OpenGraphBundle\DependencyInjection
  * @author  Nikita Loges
- * 
  */
 class Configuration implements ConfigurationInterface
 {
-
-    /** @var string  */
+    /** @var string */
     public const ROOT_NODE = 'pontedilana_open_graph';
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     public function getConfigTreeBuilder(): TreeBuilder
     {

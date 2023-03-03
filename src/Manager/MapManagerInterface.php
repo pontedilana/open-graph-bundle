@@ -5,11 +5,9 @@ namespace Pontedilana\OpenGraphBundle\Manager;
 use Pontedilana\OpenGraphBundle\Map\OpenGraphMapInterface;
 
 /**
- * Interface MapManagerInterface
+ * Interface MapManagerInterface.
  *
- * @package Pontedilana\OpenGraphBundle\Manager
  * @author  Nikita Loges
- * 
  */
 interface MapManagerInterface
 {

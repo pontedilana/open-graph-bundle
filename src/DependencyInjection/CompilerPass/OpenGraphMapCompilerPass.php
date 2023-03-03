@@ -7,11 +7,9 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
 
 /**
- * Class OpenGraphMapCompilerPass
+ * Class OpenGraphMapCompilerPass.
  *
- * @package Pontedilana\OpenGraphBundle\DependencyInjection\CompilerPass
  * @author  Nikita Loges
- * 
  */
 class OpenGraphMapCompilerPass implements CompilerPassInterface
 {

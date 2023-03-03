@@ -6,11 +6,9 @@ use Pontedilana\OpenGraphBundle\Manager\MapManagerInterface;
 use Pontedilana\OpenGraphBundle\OpenGraph\DocumentWriter;
 
 /**
- * Class OpenGraphRenderer
+ * Class OpenGraphRenderer.
  *
- * @package Pontedilana\OpenGraphBundle\Renderer
  * @author  Nikita Loges
- * 
  */
 class OpenGraphRenderer implements OpenGraphRendererInterface
 {
@@ -22,7 +20,7 @@ class OpenGraphRenderer implements OpenGraphRendererInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function render($data, array $additional = []): string
     {
@@ -30,7 +28,7 @@ class OpenGraphRenderer implements OpenGraphRendererInterface
 
         foreach ($this->mapManager->getMaps() as $map) {
             if ($map->supports($data)) {
-                if (is_null($document)) {
+                if (null === $document) {
                     $document = $this->createDocument();
                 }
 

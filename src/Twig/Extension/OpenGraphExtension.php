@@ -8,19 +8,14 @@ use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
 /**
- * Class OpenGraphExtension
+ * Class OpenGraphExtension.
  *
- * @package Pontedilana\OpenGraphBundle\Twig\Extension
  * @author  Nikita Loges
- * 
  */
 class OpenGraphExtension extends AbstractExtension
 {
     protected OpenGraphRendererInterface $renderer;
 
-    /**
-     * @param OpenGraphRendererInterface $renderer
-     */
     public function __construct(OpenGraphRendererInterface $renderer)
     {
         $this->renderer = $renderer;

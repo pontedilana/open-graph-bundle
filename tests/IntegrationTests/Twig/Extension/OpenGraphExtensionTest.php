@@ -10,7 +10,6 @@ use Twig\Test\IntegrationTestCase;
 
 class OpenGraphExtensionTest extends IntegrationTestCase
 {
-
     protected function getFixturesDir(): string
     {
         return __DIR__ . '/Fixtures/';

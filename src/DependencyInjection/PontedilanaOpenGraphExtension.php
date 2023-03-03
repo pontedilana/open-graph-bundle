@@ -8,11 +8,9 @@ use Symfony\Component\DependencyInjection\Loader;
 use Symfony\Component\HttpKernel\DependencyInjection\ConfigurableExtension;
 
 /**
- * Class PontedilanaOpenGraphExtension
+ * Class PontedilanaOpenGraphExtension.
  *
- * @package Pontedilana\OpenGraphBundle\DependencyInjection
  * @author  Nikita Loges
- * 
  */
 class PontedilanaOpenGraphExtension extends ConfigurableExtension
 {

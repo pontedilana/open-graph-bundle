@@ -19,7 +19,7 @@ class ConfigurationTest extends TestCase
     {
         $this->assertConfigurationIsValid(
             [
-                [] // no values at all
+                [], // no values at all
             ],
         );
     }

@@ -8,7 +8,6 @@ use Pontedilana\OpenGraphBundle\OpenGraph\DocumentWriterInterface;
 
 class Map implements OpenGraphMapInterface
 {
-
     public function map(DocumentWriterInterface $document, $data, array $additional = []): void
     {
         $document->append(OpenGraph::OG_TITLE, $data->name);
@@ -16,6 +15,6 @@ class Map implements OpenGraphMapInterface
 
     public function supports($data): bool
     {
-        return $data instanceof \stdClass && ! empty($data->name);
+        return $data instanceof \stdClass && !empty($data->name);
     }
 }
