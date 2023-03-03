@@ -1,11 +1,11 @@
 <?php
 
-namespace Tenolo\Bundle\OpenGraphBundle\Tests\UnitTests\Renderer;
+namespace Pontedilana\OpenGraphBundle\Tests\UnitTests\Renderer;
 
 use PHPUnit\Framework\TestCase;
-use Tenolo\Bundle\OpenGraphBundle\Manager\MapManager;
-use Tenolo\Bundle\OpenGraphBundle\Renderer\OpenGraphRenderer;
-use Tenolo\Bundle\OpenGraphBundle\Tests\Mock\Map;
+use Pontedilana\OpenGraphBundle\Manager\MapManager;
+use Pontedilana\OpenGraphBundle\Renderer\OpenGraphRenderer;
+use Pontedilana\OpenGraphBundle\Tests\Mock\Map;
 
 class OpenGraphRendererTest extends TestCase
 {

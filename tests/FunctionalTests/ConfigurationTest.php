@@ -1,10 +1,10 @@
 <?php
 
-namespace Tenolo\Bundle\OpenGraphBundle\Tests\FunctionalTests;
+namespace Pontedilana\OpenGraphBundle\Tests\FunctionalTests;
 
 use Matthias\SymfonyConfigTest\PhpUnit\ConfigurationTestCaseTrait;
 use PHPUnit\Framework\TestCase;
-use Tenolo\Bundle\OpenGraphBundle\DependencyInjection\Configuration;
+use Pontedilana\OpenGraphBundle\DependencyInjection\Configuration;
 
 class ConfigurationTest extends TestCase
 {

@@ -1,5 +1,5 @@
 {
-    "name": "tenolo/open-graph-bundle",
+    "name": "pontedilana/open-graph-bundle",
     "description": "A Symfony OpenGraph bundle",
     "license": "MIT",
     "type": "symfony-bundle",
@@ -10,9 +10,14 @@
         "og",
         "symfony",
         "bundle",
-        "tenolo"
+        "pontedilana"
     ],
     "authors": [
+        {
+            "name": "Manuel Dalla Lana",
+            "email": "manuel@pontedilana.it",
+            "homepage": "https://www.pontedilana.it"
+        },
         {
             "name": "tenolo GmbH & Co. KG",
             "email": "info@tenolo.de",
@@ -21,19 +26,12 @@
         {
             "name": "Nikita Loges",
             "email": "n.loges@tenolo.de"
-        },
-        {
-            "name": "Manuel Dalla Lana",
-            "email": "manuel@pontedilana.it",
-            "homepage": "https://www.pontedilana.it"
         }
     ],
-    "homepage": "https://github.com/tenolo/open-graph-bundle",
+    "homepage": "https://github.com/pontedilana/open-graph-bundle",
     "support": {
-        "email": "info@tenolo.de",
-        "issues": "https://github.com/tenolo/open-graph-bundle/issues",
-        "wiki": "https://github.com/tenolo/open-graph-bundle/wiki",
-        "source": "https://github.com/tenolo/open-graph-bundle/releases"
+        "issues": "https://github.com/pontedilana/open-graph-bundle/issues",
+        "source": "https://github.com/pontedilana/open-graph-bundle/releases"
     },
     "require": {
         "php": "7.4.* || 8.1.* || 8.2.*",
@@ -46,6 +44,7 @@
         "twig/twig": "^3.5"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-latest",
         "phpunit/phpunit": "^9.5",
         "symfony/phpunit-bridge": "^5.4 || ^6.2",
         "matthiasnoback/symfony-config-test": "^4.3"
@@ -54,12 +53,12 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Tenolo\\Bundle\\OpenGraphBundle\\": "src/"
+            "Pontedilana\\OpenGraphBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tenolo\\Bundle\\OpenGraphBundle\\Tests\\": "tests/"
+            "Pontedilana\\OpenGraphBundle\\Tests\\": "tests/"
         }
     }
 }

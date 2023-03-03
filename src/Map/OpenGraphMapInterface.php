@@ -1,16 +1,16 @@
 <?php
 
-namespace Tenolo\Bundle\OpenGraphBundle\Map;
+namespace Pontedilana\OpenGraphBundle\Map;
 
-use Tenolo\Bundle\OpenGraphBundle\OpenGraph\DocumentWriter;
-use Tenolo\Bundle\OpenGraphBundle\OpenGraph\DocumentWriterInterface;
+use Pontedilana\OpenGraphBundle\OpenGraph\DocumentWriter;
+use Pontedilana\OpenGraphBundle\OpenGraph\DocumentWriterInterface;
 
 /**
  * Interface OpenGraphMapInterface
  *
- * @package Tenolo\Bundle\OpenGraphBundle\Map
+ * @package Pontedilana\OpenGraphBundle\Map
  * @author  Nikita Loges
- * @company tenolo GmbH & Co. KG
+ * 
  */
 interface OpenGraphMapInterface
 {

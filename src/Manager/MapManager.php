@@ -1,15 +1,15 @@
 <?php
 
-namespace Tenolo\Bundle\OpenGraphBundle\Manager;
+namespace Pontedilana\OpenGraphBundle\Manager;
 
-use Tenolo\Bundle\OpenGraphBundle\Map\OpenGraphMapInterface;
+use Pontedilana\OpenGraphBundle\Map\OpenGraphMapInterface;
 
 /**
  * Class MapManager
  *
- * @package Tenolo\Bundle\OpenGraphBundle\Manager
+ * @package Pontedilana\OpenGraphBundle\Manager
  * @author  Nikita Loges
- * @company tenolo GmbH & Co. KG
+ * 
  */
 class MapManager implements MapManagerInterface
 {

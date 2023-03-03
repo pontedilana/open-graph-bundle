@@ -1,10 +1,10 @@
 <?php
 
-namespace Tenolo\Bundle\OpenGraphBundle\Tests\Mock;
+namespace Pontedilana\OpenGraphBundle\Tests\Mock;
 
 use Opengraph\Opengraph;
-use Tenolo\Bundle\OpenGraphBundle\Map\OpenGraphMapInterface;
-use Tenolo\Bundle\OpenGraphBundle\OpenGraph\DocumentWriterInterface;
+use Pontedilana\OpenGraphBundle\Map\OpenGraphMapInterface;
+use Pontedilana\OpenGraphBundle\OpenGraph\DocumentWriterInterface;
 
 class Map implements OpenGraphMapInterface
 {

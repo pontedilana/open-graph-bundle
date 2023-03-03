@@ -1,15 +1,15 @@
 <?php
 
-namespace Tenolo\Bundle\OpenGraphBundle\OpenGraph;
+namespace Pontedilana\OpenGraphBundle\OpenGraph;
 
 use Opengraph\Writer;
 
 /**
  * Class DocumentWriter
  *
- * @package Tenolo\Bundle\OpenGraphBundle\OpenGraph
+ * @package Pontedilana\OpenGraphBundle\OpenGraph
  * @author  Nikita Loges
- * @company tenolo GmbH & Co. KG
+ * 
  */
 class DocumentWriter extends Writer implements DocumentWriterInterface
 {

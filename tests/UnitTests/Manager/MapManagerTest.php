@@ -1,10 +1,10 @@
 <?php
 
-namespace Tenolo\Bundle\OpenGraphBundle\Tests\UnitTests\Manager;
+namespace Pontedilana\OpenGraphBundle\Tests\UnitTests\Manager;
 
-use Tenolo\Bundle\OpenGraphBundle\Tests\Mock\Map;
+use Pontedilana\OpenGraphBundle\Tests\Mock\Map;
 use PHPUnit\Framework\TestCase;
-use Tenolo\Bundle\OpenGraphBundle\Manager\MapManager;
+use Pontedilana\OpenGraphBundle\Manager\MapManager;
 
 class MapManagerTest extends TestCase
 {
