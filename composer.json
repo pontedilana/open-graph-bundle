@@ -61,10 +61,5 @@
         "psr-4": {
             "Tenolo\\Bundle\\OpenGraphBundle\\Tests\\": "tests/"
         }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
-        }
     }
 }
