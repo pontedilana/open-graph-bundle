@@ -9,13 +9,14 @@ use Pontedilana\OpenGraphBundle\OpenGraph\DocumentWriterInterface;
  * Interface OpenGraphMapInterface.
  *
  * @author  Nikita Loges
+ * @author  Manuel Dalla Lana
  */
 interface OpenGraphMapInterface
 {
     /**
      * @param DocumentWriterInterface|DocumentWriter $document
      */
-    public function map(DocumentWriterInterface $document, $data, array $additional = []);
+    public function map(DocumentWriterInterface $document, $data, array $additional = []): void;
 
     public function supports($data): bool;
 }
