@@ -5,14 +5,14 @@ namespace Pontedilana\OpenGraphBundle\OpenGraph;
 /**
  * Interface DocumentWriterInterface.
  *
- * @author  Nikita Loges
- * @author  Manuel Dalla Lana
+ * @author Nikita Loges
+ * @author Manuel Dalla Lana
  */
 interface DocumentWriterInterface
 {
-    public function append(string $property, string $content): \Opengraph\Opengraph;
+    public function append($property, $content);
 
-    public function prepend(string $property, string $content): \Opengraph\Opengraph;
+    public function prepend($property, $content);
 
-    public function render(string $indent): string;
+    public function render($indent = "\t");
 }
