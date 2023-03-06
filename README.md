@@ -143,9 +143,9 @@ we will have to use the tag `pontedilana_open_graph.map`:
 
 ``` yml
 services:
-    App\OpenGraph\BlogPostMap:
-        tags:
-            - { name: pontedilana_open_graph.map }
+    App\OpenGraph\:
+        resource: '../src/OpenGraph'
+        tags: [ 'pontedilana_open_graph.map' ]
 ```
 
 ### Using the map
