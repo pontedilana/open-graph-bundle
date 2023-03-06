@@ -3,4 +3,4 @@
 /composer.lock
 /tools/*/vendor
 .phpunit.result.cache
-.php-cs-fixer.dist.php
+.phpunit.result.cache

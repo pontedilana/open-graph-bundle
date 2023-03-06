@@ -1,0 +1,31 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Pontedilana\\\\OpenGraphBundle\\\\Map\\\\OpenGraphMapInterface\\:\\:map\\(\\) has parameter \\$data with no type specified\\.$#"
+			count: 1
+			path: src/Map/OpenGraphMapInterface.php
+
+		-
+			message: "#^Method Pontedilana\\\\OpenGraphBundle\\\\Map\\\\OpenGraphMapInterface\\:\\:supports\\(\\) has parameter \\$data with no type specified\\.$#"
+			count: 1
+			path: src/Map/OpenGraphMapInterface.php
+
+		-
+			message: "#^Method Pontedilana\\\\OpenGraphBundle\\\\Renderer\\\\OpenGraphRenderer\\:\\:render\\(\\) has parameter \\$data with no type specified\\.$#"
+			count: 1
+			path: src/Renderer/OpenGraphRenderer.php
+
+		-
+			message: "#^Method Pontedilana\\\\OpenGraphBundle\\\\Renderer\\\\OpenGraphRendererInterface\\:\\:render\\(\\) has parameter \\$data with no type specified\\.$#"
+			count: 1
+			path: src/Renderer/OpenGraphRendererInterface.php
+
+		-
+			message: "#^Method Pontedilana\\\\OpenGraphBundle\\\\Tests\\\\Mock\\\\Map\\:\\:map\\(\\) has parameter \\$data with no type specified\\.$#"
+			count: 1
+			path: tests/Mock/Map.php
+
+		-
+			message: "#^Method Pontedilana\\\\OpenGraphBundle\\\\Tests\\\\Mock\\\\Map\\:\\:supports\\(\\) has parameter \\$data with no type specified\\.$#"
+			count: 1
+			path: tests/Mock/Map.php
