@@ -9,5 +9,8 @@ namespace Pontedilana\OpenGraphBundle\Renderer;
  */
 interface OpenGraphRendererInterface
 {
+    /**
+     * @param mixed|object $data
+     */
     public function render($data): string;
 }

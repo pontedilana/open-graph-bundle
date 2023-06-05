@@ -2,7 +2,6 @@
 
 namespace Pontedilana\OpenGraphBundle\Map;
 
-use Pontedilana\OpenGraphBundle\OpenGraph\DocumentWriter;
 use Pontedilana\OpenGraphBundle\OpenGraph\DocumentWriterInterface;
 
 /**
@@ -14,9 +13,12 @@ use Pontedilana\OpenGraphBundle\OpenGraph\DocumentWriterInterface;
 interface OpenGraphMapInterface
 {
     /**
-     * @param DocumentWriterInterface|DocumentWriter $document
+     * @param mixed|object $data
      */
     public function map(DocumentWriterInterface $document, $data, array $additional = []): void;
 
+    /**
+     * @param mixed|object $data
+     */
     public function supports($data): bool;
 }
