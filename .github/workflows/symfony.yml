@@ -18,6 +18,7 @@ jobs:
           - '7.4'
           - '8.1'
           - '8.2'
+          - '8.3'
         include:
           - description: 'Symfony 5.4'
             php: '7.4'
@@ -26,12 +27,12 @@ jobs:
           - description: 'Symfony 5.4 on PHP 8.1'
             php: '8.1'
             symfony: 5.4.*
-          - description: 'Symfony 6.2'
+          - description: 'Symfony 6.4'
+            php: '8.1'
+            symfony: 6.4.*
+          - description: 'Symfony 7.0'
             php: '8.2'
-            symfony: 6.2.*
-          - description: 'Symfony 6.3'
-            php: '8.2'
-            symfony: 6.3.*-dev
+            symfony: 7.0.*
     name: PHP ${{ matrix.php }} tests (${{ matrix.description }})
     steps:
     - uses: shivammathur/setup-php@v2
