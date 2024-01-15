@@ -45,7 +45,7 @@
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
-        "phpunit/phpunit": "^9.5",
+        "phpunit/phpunit": "^10.0",
         "symfony/phpunit-bridge": "^5.4 || ^6.4 || ^7.0",
         "matthiasnoback/symfony-config-test": "^4.3"
     },
