@@ -13,7 +13,7 @@ class Map implements OpenGraphMapInterface
      */
     public function map(DocumentWriterInterface $document, $data, array $additional = []): void
     {
-        $document->append(OpenGraph::OG_TITLE, $data->name);
+        $document->append(Opengraph::OG_TITLE, $data->name);
     }
 
     /**
