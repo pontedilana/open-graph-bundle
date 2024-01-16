@@ -47,7 +47,7 @@
         "roave/security-advisories": "dev-latest",
         "phpunit/phpunit": "^9.5",
         "symfony/phpunit-bridge": "^5.4 || ^6.4 || ^7.0",
-        "matthiasnoback/symfony-config-test": "^4.3"
+        "matthiasnoback/symfony-config-test": "^5.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
