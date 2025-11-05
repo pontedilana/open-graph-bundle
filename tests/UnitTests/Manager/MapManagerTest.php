@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Pontedilana\OpenGraphBundle\Tests\UnitTests\Manager;
 
 use PHPUnit\Framework\TestCase;

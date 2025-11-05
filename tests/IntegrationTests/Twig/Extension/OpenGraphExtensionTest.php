@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Pontedilana\OpenGraphBundle\Tests\IntegrationTests\Twig\Extension;
 
 use Pontedilana\OpenGraphBundle\Manager\MapManager;
