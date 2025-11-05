@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://phpunit.readthedocs.io/en/latest/configuration.html -->
+<!-- https://docs.phpunit.de/en/11.5/configuration.html -->
 <phpunit
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd"
+        xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/11.5/phpunit.xsd"
         backupGlobals="false"
         colors="true"
         bootstrap="vendor/autoload.php"
+        cacheDirectory=".phpunit.cache"
+        displayDetailsOnTestsThatTriggerDeprecations="true"
+        displayDetailsOnTestsThatTriggerErrors="true"
+        displayDetailsOnTestsThatTriggerNotices="true"
+        displayDetailsOnTestsThatTriggerWarnings="true"
 >
 
     <php>
@@ -15,32 +20,18 @@
         <env name="SYMFONY_DEPRECATIONS_HELPER" value="disabled"/>
     </php>
 
-    <coverage processUncoveredFiles="true">
+    <source>
         <include>
             <directory suffix=".php">./src/</directory>
         </include>
         <exclude>
             <directory>./src/Resources</directory>
-            <directory>./tests</directory>
-            <directory>./vendor</directory>
         </exclude>
-    </coverage>
+    </source>
 
     <testsuites>
         <testsuite name="all">
             <directory>./tests</directory>
         </testsuite>
-        <testsuite name="unit">
-            <directory>./tests/UnitTests</directory>
-        </testsuite>
-        <testsuite name="functional">
-            <directory>./tests/FunctionalTests</directory>
-        </testsuite>
-        <testsuite name="integration">
-            <directory>./tests/IntegrationTests</directory>
-        </testsuite>
     </testsuites>
-    <listeners>
-        <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener"/>
-    </listeners>
 </phpunit>
