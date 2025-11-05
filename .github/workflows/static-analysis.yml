@@ -24,7 +24,7 @@ jobs:
               uses: "shivammathur/setup-php@v2"
               with:
                   coverage: "none"
-                  php-version: 8.1
+                  php-version: 8.4
                   extensions: mbstring, xml, ctype, iconv, intl, json
                   ini-values: "memory_limit=-1"
                   tools: flex,pecl,cs2pr
@@ -46,4 +46,4 @@ jobs:
               run: "php tools/phpstan/vendor/bin/phpstan analyse --error-format=github"
 
             - name: "Run PHP-CS-Fixer"
-              run: "php tools/php-cs-fixer/vendor/bin/php-cs-fixer fix --dry-run --diff"
+              run: "PHP_CS_FIXER_IGNORE_ENV=1 php tools/php-cs-fixer/vendor/bin/php-cs-fixer fix --dry-run --diff"

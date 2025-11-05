@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Pontedilana\OpenGraphBundle\Tests\Mock;
 
 use Opengraph\Opengraph;
@@ -9,15 +11,16 @@ use Pontedilana\OpenGraphBundle\OpenGraph\DocumentWriterInterface;
 class Map implements OpenGraphMapInterface
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function map(DocumentWriterInterface $document, $data, array $additional = []): void
     {
+        assert($data instanceof \stdClass);
         $document->append(Opengraph::OG_TITLE, $data->name);
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function supports($data): bool
     {
