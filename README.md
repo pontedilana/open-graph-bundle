@@ -10,7 +10,12 @@ The PontedilanaOpenGraphBundle is a simple way to improve how you manage OpenGra
 into your Symfony application, through the use of the [euskadi31/opengraph](https://github.com/euskadi31/opengraph) library.
 
 This repository is a fork of [tenolo/open-graph-bundle](https://github.com/tenolo/open-graph-bundle) maintained
-by [Pontedilana](https://www.pontedilana.it); support for PHP 8, Symfony 5 and 6 as been added.
+by [Pontedilana](https://www.pontedilana.it).
+
+## Requirements
+
+- **PHP**: 8.1 or higher
+- **Symfony**: 5.4 LTS, 6.4 LTS, 7.x, 8.0 (in development)
 
 > **Note**: OpenGraph is a standard protocol used by many websites (Facebook,
 > Twitter, Google, ...) to obtain more precise information about your content.

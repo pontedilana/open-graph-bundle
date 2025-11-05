@@ -15,28 +15,27 @@ jobs:
     strategy:
       matrix:
         php:
-          - '7.4'
           - '8.1'
           - '8.3'
           - '8.4'
         include:
-          - description: 'Symfony 5.4'
-            php: '7.4'
+          - description: 'Symfony 5.4 (--prefer-lowest)'
+            php: '8.1'
             symfony: 5.4.*
             composer_option: '--prefer-lowest'
-          - description: 'Symfony 5.4 on PHP 8.1'
+          - description: 'Symfony 5.4'
             php: '8.1'
             symfony: 5.4.*
-          - description: 'Symfony 6.4 on PHP 8.1'
+          - description: 'Symfony 6.4'
             php: '8.1'
             symfony: 6.4.*
-          - description: 'Symfony 7.3 on PHP 8.3'
+          - description: 'Symfony 7.3'
             php: '8.3'
             symfony: 7.3.*
-          - description: 'Symfony 7.3 on PHP 8.4'
+          - description: 'Symfony 7.4 (dev)'
             php: '8.4'
-            symfony: 7.3.*
-          - description: 'Symfony 8.0 on PHP 8.4'
+            symfony: 7.4.*@dev
+          - description: 'Symfony 8.0 (dev)'
             php: '8.4'
             symfony: 8.0.*@dev
     name: PHP ${{ matrix.php }} tests (${{ matrix.description }})
