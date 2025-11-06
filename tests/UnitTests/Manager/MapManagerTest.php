@@ -1,14 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Pontedilana\OpenGraphBundle\Tests\UnitTests\Manager;
 
-use Pontedilana\OpenGraphBundle\Tests\Mock\Map;
 use PHPUnit\Framework\TestCase;
 use Pontedilana\OpenGraphBundle\Manager\MapManager;
+use Pontedilana\OpenGraphBundle\Tests\Mock\Map;
 
 class MapManagerTest extends TestCase
 {
-
     public function testRegister(): void
     {
         $mapManager = new MapManager();

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Pontedilana\OpenGraphBundle\Twig\Extension;
 
 use Opengraph\Writer;
@@ -8,24 +10,32 @@ use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
 /**
- * Class OpenGraphExtension
+ * Class OpenGraphExtension.
  *
- * @package Pontedilana\OpenGraphBundle\Twig\Extension
+ * Provides Twig functions for rendering OpenGraph meta tags.
+ *
  * @author  Nikita Loges
- * 
  */
 class OpenGraphExtension extends AbstractExtension
 {
+    /**
+     * @var OpenGraphRendererInterface The OpenGraph renderer service
+     */
     protected OpenGraphRendererInterface $renderer;
 
     /**
-     * @param OpenGraphRendererInterface $renderer
+     * @param OpenGraphRendererInterface $renderer The OpenGraph renderer to use
      */
     public function __construct(OpenGraphRendererInterface $renderer)
     {
         $this->renderer = $renderer;
     }
 
+    /**
+     * Returns a list of Twig functions.
+     *
+     * @return TwigFunction[] List of Twig functions provided by this extension
+     */
     public function getFunctions(): array
     {
         return [
@@ -34,6 +44,13 @@ class OpenGraphExtension extends AbstractExtension
         ];
     }
 
+    /**
+     * Render an OpenGraph Writer document directly.
+     *
+     * @param Writer $opengraph The OpenGraph writer instance
+     *
+     * @return string The rendered HTML meta tags
+     */
     public function renderDocument(Writer $opengraph): string
     {
         return $opengraph->render();

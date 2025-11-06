@@ -1,25 +1,28 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Pontedilana\OpenGraphBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 /**
- * Class Configuration
+ * Class Configuration.
  *
- * @package Pontedilana\OpenGraphBundle\DependencyInjection
+ * Defines the configuration structure for the OpenGraph bundle.
+ *
  * @author  Nikita Loges
- * 
  */
 class Configuration implements ConfigurationInterface
 {
-
-    /** @var string  */
+    /**
+     * The root node name for this bundle's configuration.
+     */
     public const ROOT_NODE = 'pontedilana_open_graph';
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     public function getConfigTreeBuilder(): TreeBuilder
     {

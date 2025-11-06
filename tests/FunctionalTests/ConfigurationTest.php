@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Pontedilana\OpenGraphBundle\Tests\FunctionalTests;
 
 use Matthias\SymfonyConfigTest\PhpUnit\ConfigurationTestCaseTrait;
@@ -19,7 +21,7 @@ class ConfigurationTest extends TestCase
     {
         $this->assertConfigurationIsValid(
             [
-                [] // no values at all
+                [], // no values at all
             ],
         );
     }
